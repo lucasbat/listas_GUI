@@ -1,8 +1,12 @@
+//teste
 #include "listas.h"
 #include "ui_listas.h"
 
 //add biblioteca QMessageBox
 #include "QMessageBox"
+
+//add biblioteca QString
+#include "QString"
 
 
 Listas::Listas(QWidget *parent) :
@@ -17,13 +21,27 @@ Listas::~Listas()
     delete ui;
 }
 
+QString matriz[10];
+int i=0;
+
 //adicionar itens a uma lista
 void Listas::on_btn_add_clicked()
 {
-    QString dado = ui->lineEdit->text();
-    ui->lista->addItem(dado);
+
+    matriz[i] = ui->lineEdit->text();
+    i++;
+
     ui->lineEdit->clear();
 }
+
+//listar os itens
+void Listas::on_btn_list_clicked()
+{
+    ui->lista->clear();
+    for(int i=0; i<10; i++)
+    ui->lista->addItem(matriz[i]);
+}
+
 
 //botao delete
 void Listas::on_btn_del_clicked()

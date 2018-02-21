@@ -22,6 +22,8 @@ private slots:
 
     void on_btn_select_clicked();
 
+    void on_btn_list_clicked();
+
 private:
     Ui::Listas *ui;
 };

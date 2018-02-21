@@ -73,6 +73,19 @@
      <string>SELECIONA</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_list">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LIST</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
