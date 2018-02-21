@@ -1,4 +1,3 @@
-//teste
 #include "listas.h"
 #include "ui_listas.h"
 
